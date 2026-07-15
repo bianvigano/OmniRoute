@@ -74,7 +74,7 @@
   },
   "homepage": "https://omniroute.online",
   "scripts": {
-    "dev": "node --max-old-space-size=8192 scripts/dev/run-next.mjs dev",
+    "dev": "node --max-old-space-size=6144 scripts/dev/run-next.mjs dev",
     "prebuild:docs": "node scripts/docs/gen-openapi-module.mjs",
     "gen:provider-reference": "bun scripts/docs/gen-provider-reference.ts",
     "bench:compression": "bun scripts/compression/benchmark.ts",
@@ -287,7 +287,7 @@
     "sqlite-vec": "^0.1.9",
     "tailwind-merge": "^3.6.0",
     "tsx": "^4.23.0",
-    "undici": "^8.3.0",
+    "undici": "5.28.4",
     "update-notifier": "^7.3.1",
     "uuid": "^14.0.0",
     "ws": "^8.18.0",
@@ -343,6 +343,7 @@
     "lockfile-lint": "^5.0.0",
     "node-loader": "^2.1.0",
     "prettier": "^3.8.3",
+    "remark-gfm": "^4.0.1",
     "size-limit": "^12.1.0",
     "tailwindcss": "^4.3.0",
     "type-coverage": "^2.29.7",
@@ -386,7 +387,7 @@
       "js-yaml": "^4.2.0"
     },
     "jsdom": {
-      "undici": "^7.28.0"
+      "undici": "^8.3.0"
     },
     "node-gyp": {
       "undici": "^6.27.0"
